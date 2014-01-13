@@ -1,0 +1,9 @@
+Build.PL
+lib/Edgar.pm
+LICENSE
+MANIFEST			This list of files
+MANIFEST.SKIP
+META.json
+META.yml
+README.md
+t/00_use.t
