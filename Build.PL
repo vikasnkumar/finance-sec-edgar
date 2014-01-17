@@ -18,13 +18,14 @@ my $build = Module::Build->new(
         'Module::Build' => 0,
         'Test::More' => 0,
         'File::Spec' => 0,
-        'LWP' => 0,
-        'LWP::UserAgent' => 0,
     },
     requires => {
         'perl' => '5.10.0',
         'LWP' => 0,
         'DateTime' => 0,
+        'Regexp::Common' => 0,
+        'LWP' => 0,
+        'LWP::UserAgent' => 0,
     },
     recommends => {
         'Finance::QuoteHist' => 0,
@@ -47,10 +48,13 @@ my $build = Module::Build->new(
     },
     pm_files => {
         'lib/Edgar.pm' => 'lib/Finance/SEC/Edgar.pm',
+        'lib/Edgar/Downloader.pm' => 'lib/Finance/SEC/Edgar/Downloader.pm',
+        'lib/Edgar/Parser.pm' => 'lib/Finance/SEC/Edgar/Parser.pm',
     }
 );
 
 $build->create_build_script;
+$build->dispatch('clean');
 $build->dispatch('distmeta');
 $build->dispatch('manifest');
 

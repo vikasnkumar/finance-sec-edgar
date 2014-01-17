@@ -1,5 +1,8 @@
 Build.PL
+Changes
 lib/Edgar.pm
+lib/Edgar/Downloader.pm
+lib/Edgar/Parser.pm
 LICENSE
 MANIFEST			This list of files
 MANIFEST.SKIP

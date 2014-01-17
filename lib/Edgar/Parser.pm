@@ -1,4 +1,4 @@
-package Finance::SEC::Edgar;
+package Finance::SEC::Edgar::Parser;
 use strict;
 use warnings;
 use Carp;
@@ -7,9 +7,8 @@ BEGIN {
     our $VERSION = '0.01';
     $VERSION = eval $VERSION;
 }
+use Regexp::Common;
 
-use Finance::SEC::Edgar::Downloader;
-use Finance::SEC::Edgar::Parser;
 
 1;
 
@@ -21,11 +20,11 @@ __END__
 
 =head1 NAME
 
-Finance::SEC::Edgar
+Finance::SEC::Edgar::Parser
 
 =head1 SYNOPSIS
 
-Finance::SEC::Edgar is used to download and parse the SEC EDGAR filings.
+Finance::SEC::Edgar::Parser is used to download the SEC EDGAR filings.
 
 =head1 AUTHORS
 
