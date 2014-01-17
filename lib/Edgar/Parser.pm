@@ -24,7 +24,7 @@ Finance::SEC::Edgar::Parser
 
 =head1 SYNOPSIS
 
-Finance::SEC::Edgar::Parser is used to download the SEC EDGAR filings.
+Finance::SEC::Edgar::Parser is used to parse the SEC EDGAR filings.
 
 =head1 AUTHORS
 
